@@ -105,6 +105,7 @@ p {
     z-index: 0;
     padding: 0 5vw; /* responsive side spacing */
     box-sizing: border-box;
+    pointer-events: none; /* allow clicks through image */
   }
 
 .bg-image.show {
@@ -150,15 +151,13 @@ p {
   font-size: 16px;
   margin-top: 20px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  justify-content: center;
+  display: block;
   text-align: center;
-  padding: 0 10px;
 }
 
 .map-text a {
+  position: relative;
+  z-index: 2;
   color: #13008b;
   text-decoration: underline;
   font-size: 14px;
@@ -263,8 +262,8 @@ h1 {
   </p>
 
   <p class="map-text">
- <a href="https://www.google.com/maps/search/?api=1&query=BPCL+Marine+Drive+Auditorium+Behind+Highcourt+Ernakulam" target="_blank">
-    View on Google Maps
+    <a href="https://www.google.com/maps/search/?api=1&query=BPCL+Marine+Drive+Auditorium+Behind+Highcourt+Ernakulam" target="_blank">
+      View on Google Maps
     </a>
   </p>
 </div>
